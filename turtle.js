@@ -110,3 +110,5 @@ function frame(){
     stickman(0, 0)   
     vezRepeticao++//nao mexer nesta linha 
 }
+
+setInterval(() => {frame()}, 100 /*tempo de cada frame*/);//faz com que a func frame() seja executada a cada X imlesengundos
