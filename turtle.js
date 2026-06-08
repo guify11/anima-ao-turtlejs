@@ -108,11 +108,13 @@ function frame(){
     console.log(String("numero de repetiçoes: ") + vezRepeticao)//nao mexer nesta linha 
     clear()
     casa()
-    stickman(xRepetiçao--, yRepeticao)   
-    vezRepeticao++//nao mexer nesta linha 
+    stickman(xRepetiçao--, yRepeticao) 
+
     if (xRepetiçao == -200){
         Repetir = false
     }
+    vezRepeticao++//nao mexer nesta linha 
 }
+    
 
 setInterval(() => {if (Repetir){frame()}}, 0.01 /*tempo de cada frame*/);//faz com que a func frame() seja executada a cada X imlesengundos
