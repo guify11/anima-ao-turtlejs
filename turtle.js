@@ -4,7 +4,7 @@
 var vezRepeticao = 0
 var xRepetiçao = 250
 var yRepeticao = -245
-
+var Repetir = true
 
 
 
@@ -110,6 +110,9 @@ function frame(){
     casa()
     stickman(xRepetiçao--, yRepeticao)   
     vezRepeticao++//nao mexer nesta linha 
+    if (xRepetiçao == -200){
+        Repetir = false
+    }
 }
 
-setInterval(() => {frame()}, 0.01 /*tempo de cada frame*/);//faz com que a func frame() seja executada a cada X imlesengundos
+setInterval(() => {if (Repetir){frame()}}, 0.01 /*tempo de cada frame*/);//faz com que a func frame() seja executada a cada X imlesengundos
