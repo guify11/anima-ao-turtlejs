@@ -121,8 +121,8 @@ function frame(){
     }
 }
 
-setInterval(() => {if (Repetir){frame()}}, 0.01 /*tempo de cada frame*/);//faz com que a func frame() seja executada a cada X imlesengundos
+setInterval(() => {if (Repetir){frame()}}, 10 /*tempo de cada frame*/);//faz com que a func frame() seja executada a cada X imlesengundos
 
 function pularAnim(){
-    xRepetiçao = 450
+    xRepetiçao = -190
 }
