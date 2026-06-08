@@ -108,3 +108,4 @@ while(vezRepeticao <= 10){
     console.log(String("numero de repetiçoes: ") + vezRepeticao)
 
     vezRepeticao++
+}
