@@ -105,16 +105,20 @@ stickman(250, -215)
 */
 
 function frame(){
-    console.log(String("numero de repetiçoes: ") + vezRepeticao)//nao mexer nesta linha 
+    console.log(String("numero de frames ja desenhados: ") + vezRepeticao++)//nao mexer nesta linha 
     clear()
     casa()
     stickman(xRepetiçao--, yRepeticao) 
 
     if (xRepetiçao == -200){
         Repetir = false
+        console.warn("reptiçao finalizada a iniciar frame final")
+        clear()
+        casa
+        goto(0, 200)
+        setFont("50px sans-serif")
+        write("O pedro chegou a casa :p")
     }
-    vezRepeticao++//nao mexer nesta linha 
 }
-    
 
 setInterval(() => {if (Repetir){frame()}}, 0.01 /*tempo de cada frame*/);//faz com que a func frame() seja executada a cada X imlesengundos
