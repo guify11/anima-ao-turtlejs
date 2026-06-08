@@ -114,7 +114,7 @@ function frame(){
         Repetir = false
         console.warn("reptiçao finalizada a iniciar frame final")
         clear()
-        casa
+        casa()
         goto(0, 200)
         setFont("50px sans-serif")
         write("O pedro chegou a casa :p")
@@ -122,3 +122,7 @@ function frame(){
 }
 
 setInterval(() => {if (Repetir){frame()}}, 0.01 /*tempo de cada frame*/);//faz com que a func frame() seja executada a cada X imlesengundos
+
+function pularAnim(){
+    xRepetiçao = 450
+}
