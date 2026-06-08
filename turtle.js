@@ -6,7 +6,7 @@ var xRepetiçao = 250
 var yRepeticao = -245
 var Repetir = true
 
-
+if (localStorage.getItem("pulos") != 0 && localStorage.getItem("pulos") != null){document.getElementById("paredeVergonha").innerText = String("Tu pulaste: " ) + localStorage.getItem("pulos") + String(" animaçoes:(")}
 
 function aleatorio(min, max){
     return Math.floor(Math.random() * (max-min +1)) + min;
@@ -108,6 +108,7 @@ function pularAnim(){
     if (xRepetiçao > -190){
         xRepetiçao = -190
         localStorage.setItem("pulos", Number(localStorage.getItem("pulos")) + Number(1))
+        document.getElementById("paredeVergonha").innerText = String("Tu pulaste: " ) + localStorage.getItem("pulos") + String(" animaçoes:(")
     }
     else{console.warn("a animaçao ja foi pulada")}
 }
