@@ -20,6 +20,7 @@ function limpar(){
 }
 pendown()
 
+
 function casa(){
     goto(-340, -340)
     angle(0)
@@ -103,6 +104,14 @@ function stickman(x, y){
 casa()
 stickman(250, -215)
 */
+function pularAnim(){
+    if (xRepetiçao > -190){
+        xRepetiçao = -190
+        localStorage.setItem("pulos", Number(localStorage.getItem("pulos")) + Number(1))
+    }
+    else{console.warn("a animaçao ja foi pulada")}
+}
+
 
 function frame(){
     console.log(String("numero de frames ja desenhados: ") + vezRepeticao++)//nao mexer nesta linha 
@@ -123,6 +132,3 @@ function frame(){
 
 setInterval(() => {if (Repetir){frame()}}, 10 /*tempo de cada frame*/);//faz com que a func frame() seja executada a cada X imlesengundos
 
-function pularAnim(){
-    xRepetiçao = -190
-}
