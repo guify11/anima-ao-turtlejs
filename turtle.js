@@ -2,8 +2,8 @@
 
 // config variaveis:
 var vezRepeticao = 0
-var xRepetiçao = 0
-var yRepeticao = 0
+var xRepetiçao = 250
+var yRepeticao = -245
 
 
 
@@ -106,9 +106,10 @@ stickman(250, -215)
 
 function frame(){
     console.log(String("numero de repetiçoes: ") + vezRepeticao)//nao mexer nesta linha 
+    clear()
     casa()
-    stickman(0, 0)   
+    stickman(xRepetiçao--, yRepeticao)   
     vezRepeticao++//nao mexer nesta linha 
 }
 
-setInterval(() => {frame()}, 100 /*tempo de cada frame*/);//faz com que a func frame() seja executada a cada X imlesengundos
+setInterval(() => {frame()}, 0.01 /*tempo de cada frame*/);//faz com que a func frame() seja executada a cada X imlesengundos
