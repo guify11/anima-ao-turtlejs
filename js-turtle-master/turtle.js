@@ -105,7 +105,7 @@ stickman(250, -215)
 */
 
 while(vezRepeticao <= 10){
-    console.log(String("numero de repetiçoes: ") + vezRepeticao)
+    console.log(String("numero de repetiçoes: ") + vezRepeticao)//nao mexer nesta linha 
 
-    vezRepeticao++
+    vezRepeticao++//nao mexer nesta linha 
 }
