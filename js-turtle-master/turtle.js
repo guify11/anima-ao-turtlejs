@@ -56,9 +56,9 @@ function casa(){
    
 }
 
-function stickman(posisaoX, PosisaoY, ){
+function stickman(x, y){
     for (let i = 0; i < 3600; i++){
-        goto(0, 0)
+        goto(x, y)
         penup();
         forward(20);
         pendown();
@@ -66,22 +66,22 @@ function stickman(posisaoX, PosisaoY, ){
         right(0.1);
 
     }
-    goto(0, -20)
+    goto(x, y - 20)
     left(90)
     forward(50)
     left(15)
     forward(30)
-    goto(0, -70)
+    goto(x, y - 70)
     right(30)
     forward(30)
-    goto(0, -20)
+    goto(x, y - 20)
     angle(180)
 
     forward(10)
     left(15)
     forward(40)
 
-    goto(0, -20)
+    goto(x, y - 20)
 
     forward(10)
     right(30)
