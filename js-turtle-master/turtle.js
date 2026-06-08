@@ -88,6 +88,9 @@ function stickman(x, y){
     forward(40)
 }
 
+/*
+1 frame:
 
 casa()
-stickman()
+stickman(250, -215)
+*/
