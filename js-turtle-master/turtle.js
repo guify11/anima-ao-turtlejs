@@ -103,3 +103,8 @@ function stickman(x, y){
 casa()
 stickman(250, -215)
 */
+
+while(vezRepeticao <= 10){
+    console.log(String("numero de repetiçoes: ") + vezRepeticao)
+
+    vezRepeticao++
