@@ -104,8 +104,9 @@ casa()
 stickman(250, -215)
 */
 
-while(vezRepeticao <= 10){
+function frame(){
     console.log(String("numero de repetiçoes: ") + vezRepeticao)//nao mexer nesta linha 
-
+    casa()
+    stickman(0, 0)   
     vezRepeticao++//nao mexer nesta linha 
 }
